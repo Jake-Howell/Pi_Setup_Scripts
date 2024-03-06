@@ -14,7 +14,7 @@ echo "Installing required packages..."
 sudo apt install -y hostapd dnsmasq iptables
 
 # Stop wpa supplicant
-# systemctl stop wpa_supplicant
+systemctl stop wpa_supplicant
 
 #Following 2 commands @ 1:31 of yt video to be put into dnsmasq.conf
 ####################################################################
@@ -43,6 +43,9 @@ channel=1
 
 # Set Deiver
 driver=nl80211
+
+# Set country code
+country_code=GB
 EOF
 
 # BASH COMMAND
