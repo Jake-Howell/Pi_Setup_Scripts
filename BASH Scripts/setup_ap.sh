@@ -57,5 +57,6 @@ cat <<EOF | sudo tee /etc/default/hostapd
 DAEMON_OPTS="/etc/hostapd/hostapd.conf"
 EOF
 
+# restart hostapd
 sudo systemctl restart hostapd
 
